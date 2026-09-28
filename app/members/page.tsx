@@ -35,7 +35,7 @@ export default function MembersPage() {
   };
 
   const handleDelete = async (id: string) => {
-    await deleteFamilyMember(id);
+    await deleteFamilyMember(Number(id));
    const data = await getFamilyMembers();
     setMembers(data);
   };
