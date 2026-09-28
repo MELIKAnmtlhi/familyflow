@@ -1,0 +1,270 @@
+{
+  "familyMembers": [
+    {
+      "id": 1,
+      "name": "Melika",
+      "role": "mother",
+      "avatar": "👩"
+    },
+    {
+      "id": 2,
+      "name": "Mahan",
+      "role": "father",
+      "avatar": "👨"
+    },
+    {
+      "id": 3,
+      "name": "Melithea",
+      "role": "daughter",
+      "avatar": "👧"
+    },
+    {
+      "id": 4,
+      "name": "Radin",
+      "role": "son",
+      "avatar": "🧑"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "test@example.com",
+      "password": "123456",
+      "name": "Test User"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Grocery shopping",
+      "assignedTo": [
+        1,
+        2
+      ],
+      "isCompleted": false,
+      "completedBy": null,
+      "createdAt": "2026-05-12T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "House cleaning",
+      "assignedTo": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "isCompleted": false,
+      "completedBy": null,
+      "createdAt": "2026-05-12T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "School pickup",
+      "isCompleted": false,
+      "createdAt": "2026-05-12T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "Health checkups",
+      "isCompleted": false,
+      "createdAt": "2026-05-12T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "Family gathering",
+      "isCompleted": false,
+      "createdAt": "2026-05-12T00:00:00.000Z"
+    }
+  ],
+  "budget": {
+    "total": 100000000,
+    "used": 40000000
+  },
+  "weeklyItems": {
+    "Saturday": [
+      {
+        "id": 1,
+        "name": "Milk",
+        "isBought": false
+      },
+      {
+        "id": 2,
+        "name": "Eggs",
+        "isBought": false
+      },
+      {
+        "id": 3,
+        "name": "Bread",
+        "isBought": false
+      },
+      {
+        "id": 4,
+        "name": "Butter",
+        "isBought": false
+      },
+      {
+        "id": 5,
+        "name": "Cheese",
+        "isBought": false
+      },
+      {
+        "id": 6,
+        "name": "Yogurt",
+        "isBought": false
+      },
+      {
+        "id": 7,
+        "name": "Chicken",
+        "isBought": false
+      },
+      {
+        "id": 8,
+        "name": "Rice",
+        "isBought": false
+      },
+      {
+        "id": 9,
+        "name": "Pasta",
+        "isBought": false
+      },
+      {
+        "id": 10,
+        "name": "Tomato sauce",
+        "isBought": false
+      }
+    ],
+    "Sunday": [
+      {
+        "id": 1,
+        "name": "Fruits",
+        "isBought": false
+      },
+      {
+        "id": 2,
+        "name": "Vegetables",
+        "isBought": false
+      }
+    ],
+    "Monday": [
+      {
+        "id": 1,
+        "name": "Fish",
+        "isBought": false
+      }
+    ],
+    "Tuesday": [
+      {
+        "id": 1,
+        "name": "Juice",
+        "isBought": false
+      },
+      {
+        "id": 2,
+        "name": "Snacks",
+        "isBought": false
+      }
+    ],
+    "Wednesday": [
+      {
+        "id": 1,
+        "name": "Coffee",
+        "isBought": false
+      }
+    ],
+    "Thursday": [
+      {
+        "id": 1,
+        "name": "Tea",
+        "isBought": false
+      },
+      {
+        "id": 2,
+        "name": "Sugar",
+        "isBought": false
+      }
+    ],
+    "Friday": [
+      {
+        "id": 1,
+        "name": "Cake",
+        "isBought": false
+      },
+      {
+        "id": 2,
+        "name": "Ice cream",
+        "isBought": false
+      },
+      {
+        "id": 3,
+        "name": "Chocolate",
+        "isBought": false
+      }
+    ]
+  },
+  "weeklyReset": {
+    "id": 1,
+    "lastResetWeek": "2026-W20"
+  },
+  "houseCleaningTasks": {
+    "Saturday": [
+      {
+        "id": 1,
+        "name": "Dusting",
+        "isDone": false
+      },
+      {
+        "id": 2,
+        "name": "Vacuuming",
+        "isDone": false
+      },
+      {
+        "id": 3,
+        "name": "Mopping",
+        "isDone": false
+      }
+    ],
+    "Sunday": [
+      {
+        "id": 1,
+        "name": "Dishwashing",
+        "isDone": false
+      }
+    ],
+    "Monday": [
+      {
+        "id": 1,
+        "name": "Laundry",
+        "isDone": false
+      }
+    ],
+    "Tuesday": [
+      {
+        "id": 1,
+        "name": "Clean windows",
+        "isDone": false
+      }
+    ],
+    "Wednesday": [
+      {
+        "id": 1,
+        "name": "Take out trash",
+        "isDone": false
+      }
+    ],
+    "Thursday": [
+      {
+        "id": 1,
+        "name": "Organize closets",
+        "isDone": false
+      }
+    ],
+    "Friday": [
+      {
+        "id": 1,
+        "name": "Water plants",
+        "isDone": false
+      }
+    ]
+  }
+}
