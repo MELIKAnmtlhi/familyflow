@@ -18,7 +18,7 @@ export default function MemberDetailPage() {
     const loadData = async () => {
       const members = await getFamilyMembers();
       setAllMembers(members)
-      const found = members.find((m) => m.id === Number(id));
+      const found = members.find((m) => String(m.id )=== String(id));
       setMember(found || null);
 
       const allTasks = await getTasks();
