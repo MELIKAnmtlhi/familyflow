@@ -6,6 +6,16 @@ FamilyFlow helps families stay organized — manage tasks, track expenses, save 
 
 ---
 
+## 🌐 Live Demo
+
+<div align="center">
+
+[![🚀 Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-blue?style=for-the-badge)](https://family-flow-red.vercel.app)
+
+🔗 [family-flow-red.vercel.app](https://family-flow-red.vercel.app)
+
+</div>
+
 ## ✨ Features
 
 - 🔐 Authentication — Secure login with Google (NextAuth.js)
