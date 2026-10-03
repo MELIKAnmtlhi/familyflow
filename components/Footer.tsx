@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="w-full px-10 py-4 flex justify-start items-center pl-32">
         <Link
           href="/about"
-          className="text-[#C48CB3] hover:text-[#0D1E4C]/80 font-bold text-xl transition"
+          className="text-[#0D1E4C] font-bold text-xl transition"
         >
           About Me
         </Link>
@@ -14,3 +14,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+// "text-[#C48CB3] hover:text-[#0D1E4C]/80 font-bold text-xl transition"
