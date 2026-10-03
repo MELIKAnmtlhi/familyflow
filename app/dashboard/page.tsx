@@ -70,14 +70,17 @@ useEffect(() => {
          href="/members"
          className="bg-[#C48CB3] hover:bg-[#83A6CE] text-[#0D1E4C] px-8 py-4 rounded-full text-base font-bold transition shadow-md"
       >
-       👨‍👩‍👧‍👦 Members
+       👨‍👩‍👧‍👦Members
      </Link>
       
          <button
-            onClick={() => signOut({ callbackUrl: "/"})}
+            onClick={ async() => {
+              await fetch("api/auth/logout", { method: "POST"});
+              signOut({ callbackUrl: "/"});
+            }}
           className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full text-base font-bold transition shadow-md"
           >
-        🚪 Logout
+        🚪Logout
        </button>
       </div>
       </header>
