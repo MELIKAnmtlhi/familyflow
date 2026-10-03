@@ -17,7 +17,7 @@ export default function AuthModal({
 }: AuthModalProps) {
   const router = useRouter();
 
-//   const [isLogin, setIsLogin] = useState(mode === "login");
+
  const isLogin = mode === "login";
 
   const [name, setName] = useState("");
@@ -28,17 +28,7 @@ export default function AuthModal({
   const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // هماهنگ شدن Modal با Navbar
-//   useEffect(() => {
-//     setIsLogin(mode === "login");
 
-//     setName("");
-//     setEmail("");
-//     setPassword("");
-
-//     setError("");
-//     setSuccess("");
-//   }, [mode, isOpen]);
 
   if (!isOpen) return null;
 
@@ -101,17 +91,21 @@ export default function AuthModal({
       if (data.success) {
         setSuccess("Account created successfully. Please log in.");
 
-        // خالی کردن فرم
+        
         setName("");
         setEmail("");
         setPassword("");
 
-        // بعد از ثبت نام، فرم به Login تبدیل میشه
+       
         setTimeout(() => {
           setSuccess("");
-        //   setIsLogin(true);
+          onClose();
+          router.push("/dashboard");
+          router.refresh();
+     
         }, 1200);
       }
+
     } catch (error) {
       console.error("Authentication error:", error);
       setError("Something went wrong. Please try again.");
