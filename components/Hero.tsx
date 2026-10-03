@@ -9,7 +9,7 @@ const playfair = Playfair_Display({
 export default function Hero() {
   return (
     <section className="text-center py-20 px-4">
-      <h1 className={`${playfair.className} text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold italic tracking-wide bg-gradient-to-r from-[#0D1E4C] drop-shadow-lg`}>
+      <h1 className={`${playfair.className} text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold italic tracking-wide  text-[#0D1E4C] drop-shadow-lg`}>
         FamilyFlow
       </h1>
     </section>
