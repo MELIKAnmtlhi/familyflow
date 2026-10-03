@@ -31,8 +31,14 @@ export async function POST(req: NextRequest) {
       name: newUser.name,
       email: newUser.email,
     });
-  } catch (error) {
+  } catch (error: unknown) {
     console.error("Registration error:", error);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    return NextResponse.json({ 
+      error: "Internal server error",
+      details: error instanceof Error ? error.message : String(error),
+      type: error instanceof Error ? error.name : "Unknown" 
+
+      }, { status: 500 }
+    );
   }
 }
