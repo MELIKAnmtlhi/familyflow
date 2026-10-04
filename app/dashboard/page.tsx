@@ -62,7 +62,7 @@ useEffect(() => {
   return (
     <main className="relative min-h-screen flex flex-col bg-gradient-to-br from-[#26415E] via-[#C48CB3] to-[#0D1E4C]">
       <header className="sticky top-0 z-50 flex justify-between items-center p-6 border-b border-white/20 backdrop-blur-md">
-       <h1 className="text-2xl font-bold italic">
+       <h1 className="text-2xl font-bold italic mr-4">
          <span className="text-[#0D1E4C]">FamilyFlow</span>
        </h1>
        <div className="flex items-center justify-end gap-4 ">
@@ -70,7 +70,7 @@ useEffect(() => {
          href="/members"
          className="bg-[#C48CB3] hover:bg-[#83A6CE] text-[#0D1E4C] px-8 py-4 rounded-full text-base font-bold transition shadow-md"
       >
-       👨‍👩‍👧‍👦Members
+       👨‍👩‍👧‍👦 Members
      </Link>
       
          <button
