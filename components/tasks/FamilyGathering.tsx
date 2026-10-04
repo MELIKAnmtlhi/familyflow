@@ -103,20 +103,20 @@ export default function FamilyGatherings() {
         </div>
 
         <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-md rounded-xl p-6 mb-8 border border-white/20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             <input
               type="text"
               placeholder="Event title..."
               value={formData.title}
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-              className="px-4 py-2 rounded-lg bg-white/20 text-white placeholder-white/50 border border-white/30 focus:outline-none focus:ring-2 focus:ring-[#C48CB3]"
+              className="w-full px-4 py-2 rounded-lg bg-white/20 text-white placeholder-white/50 border border-white/30 focus:outline-none focus:ring-2 focus:ring-[#C48CB3]"
               required
             />
             <input
               type="datetime-local"
               value={formData.dateTime}
               onChange={(e) => setFormData({ ...formData, dateTime: e.target.value })}
-              className="px-4 py-2 rounded-lg bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-[#C48CB3]"
+              className="w-full px-4 py-2 rounded-lg bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-[#C48CB3]"
               required
             />
             <input
@@ -124,7 +124,7 @@ export default function FamilyGatherings() {
               placeholder="Location..."
               value={formData.location}
               onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-              className="px-4 py-2 rounded-lg bg-white/20 text-white placeholder-white/50 border border-white/30 focus:outline-none focus:ring-2 focus:ring-[#C48CB3]"
+              className="w-full px-4 py-2 rounded-lg bg-white/20 text-white placeholder-white/50 border border-white/30 focus:outline-none focus:ring-2 focus:ring-[#C48CB3]"
               required
             />
           </div>
