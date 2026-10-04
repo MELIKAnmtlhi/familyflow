@@ -129,7 +129,7 @@ export default function SchoolPickup() {
     const items = week[dayKey] || [];
     return (
       <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 shadow-lg h-[340px] flex flex-col">
-        <h3 className="text-white font-bold text-sm sm:text-lg border-b border-white/20 pb-2 mb-3 break-words">
+        <h3 className="text-white font-bold text-xm sm:text-lg border-b border-white/20 pb-2 mb-3 break-words">
           {day}
         </h3>
 

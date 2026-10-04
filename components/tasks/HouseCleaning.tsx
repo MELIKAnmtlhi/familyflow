@@ -98,7 +98,7 @@ export default function HouseCleaning() {
   const renderDayCard = (day: string, dayItems: CleaningItem[]) => (
     <div className="bg-white/5 rounded-lg p-3 flex flex-col h-[340px]">
      
-      <h3 className="text-white font-bold text-sm sm:text-lg border-b border-white/20 pb-2 mb-3 break-words">
+      <h3 className="text-white font-bold text-xm sm:text-lg border-b border-white/20 pb-2 mb-3 break-words">
           {day}
         </h3>
       <div className="flex-1 overflow-y-auto space-y-2 pr-1 mb-2 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-white/10 [&::-webkit-scrollbar-thumb]:bg-white/30 [&::-webkit-scrollbar-thumb]:rounded-full">
