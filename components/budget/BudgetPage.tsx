@@ -12,6 +12,7 @@ export default function BudgetPage() {
   const [budgetTotal, setBudgetTotal] = useState<number | null>(null);
   const [newBudgetInput, setNewBudgetInput] = useState<string>("");
   const [showBudgetInput, setShowBudgetInput] = useState<boolean>(false);
+  const [userId, setUserId] = useState<string>("");
   const [formData, setFormData] = useState({
     title: "",
     amount: "",
@@ -21,7 +22,17 @@ export default function BudgetPage() {
     description: "",
   });
 
-  const userId = typeof window !== "undefined" ? localStorage.getItem("userId") || "" : "";  
+  // const userId = typeof window !== "undefined" ? localStorage.getItem("userId") || "" : "";  
+  useEffect(() => {
+    const fetchUser = async () => {
+      const res = await fetch("/api/auth/me");
+      if(res.ok) {
+        const data = await res.json();
+        setUserId(data.userId)
+      };
+    }
+    fetchUser()
+  }, [])
 
   const loadData = async () => {
     try {
