@@ -70,7 +70,7 @@ useEffect(() => {
          href="/members"
          className="bg-[#C48CB3] hover:bg-[#83A6CE] text-[#0D1E4C] px-8 py-4 rounded-full text-base font-bold transition shadow-md"
       >
-       👨‍👩‍👧‍👦 Members
+        👨‍👩‍👧‍👦Members
      </Link>
       
          <button
