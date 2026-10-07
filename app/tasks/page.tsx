@@ -143,7 +143,7 @@ export default function TasksPage() {
                   </Link>
                 </div>
                 <button
-                  onClick={() => handleDelete(task.id)}
+                  onClick={() => handleDelete(task._id!)}
                   className="text-red-400 hover:text-red-300 transition text-sm px-2 py-1 rounded hover:bg-white/10"
                 >
                   ✕ Delete
