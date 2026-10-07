@@ -132,12 +132,12 @@ export default function AuthModal({
       onClick={onClose}
     >
       <div
-        className="bg-[#E8E4DC] rounded-2xl shadow-2xl max-w-4xl w-full overflow-hidden grid grid-cols-1 md:grid-cols-2"
+        className="bg-[#E8E4DC] rounded-2xl shadow-2xl max-w-4xl w-full overflow-hidden grid grid-cols-1 md:grid-cols-[40%_60%]"
         onClick={(e) => e.stopPropagation()}
       >
        
-        <div className="hidden md:flex flex-col items-center justify-center p-12 bg-[#E8E4DC]">
-          <div className="w-32 h-32 rounded-full border-8 border-[#26415E] flex items-center justify-center relative">
+        <div className="hidden md:flex flex-col items-center justify-center p-8 bg-[#E8E4DC]">
+          <div className="w-28 h-28 rounded-full border-8 border-[#26415E] flex items-center justify-center relative">
             <div className="absolute w-3 h-3 bg-[#26415E] rounded-full top-10 left-8" />
 
             <div className="absolute w-3 h-3 bg-[#26415E] rounded-full top-10 right-8" />
@@ -146,7 +146,7 @@ export default function AuthModal({
           </div>
         </div>
         
-        <div className="p-8 md:p-12 bg-white">
+        <div className="p-6 md:p-10 bg-white">
           <h2 className="text-2xl font-bold text-[#0D1E4C] mb-6">
             {isLogin
               ? "Log in to your account"
