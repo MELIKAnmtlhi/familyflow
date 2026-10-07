@@ -206,9 +206,9 @@ export const updateHealthCheckup = async (id: string, data: Partial<Omit<HealthC
 };
 
 export const deleteHealthCheckup = async (id: string): Promise<void> => {
-  const res = await fetch(`/api/healthCheckups/${id}, {
+  const res = await fetch(`/api/healthCheckups/${id}`, {
     method: "DELETE",
-  }`);
+  });
   if (!res.ok) throw new Error("Failed to delete health checkup");
 };
 
