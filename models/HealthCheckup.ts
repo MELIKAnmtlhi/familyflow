@@ -6,8 +6,8 @@ const HealthCheckupSchema = new mongoose.Schema({
     date: {type: String, required: true},
     time: {type: String, required: true},
     doctor: {type: String, required: true},
-    notes: {type: String, required: true},
-    isDone: {type: String, required: true},
+    notes: {type: String, required: "" },
+    isDone: {type: String, required: false},
     createdAt:  {type: String, default: () => new Date().toISOString()},
 });
 
