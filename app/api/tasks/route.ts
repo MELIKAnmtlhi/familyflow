@@ -38,11 +38,11 @@ export async function POST( req: NextRequest) {
           return NextResponse.json({ error: "Title is required"}, {status: 400})
         }
 
-        const slug = body.title.toLowerCase().split("").join("-")
+        const slug = body.title.toLowerCase().split(" ").join("-")
 
-        const newTask = await Task.create(
+        const newTask = await Task.create({
           ...body, 
-          slug );
+          slug });
         console.log("Task created:", newTask)
         return NextResponse.json(newTask, { status: 201 });
     } catch (error) {
